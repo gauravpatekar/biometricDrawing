@@ -18,12 +18,12 @@ void loop() {
     }
 
     if (ledState == true) {
-      char mystr[10] = "LED is OFF";
-      Serial.write(mystr, 10); // send the response in return
+      char mystr[3] = "OFF";
+      Serial.write(mystr, 3); // send the response in return
     }
     else if (ledState == false) {
-      char mystr[10] = "LED is ON ";      
-      Serial.write(mystr, 10); // send the response in return
+      char mystr[3] = "ON ";      
+      Serial.write(mystr, 3); // send the response in return
     }
   }
 }

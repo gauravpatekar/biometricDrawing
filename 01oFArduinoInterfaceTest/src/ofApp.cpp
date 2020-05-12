@@ -28,7 +28,7 @@ void ofApp::update(){
         serial.readBytes(receivedData, 10); // Getting the data from Arduino
         printf("receivedData is %d \n", receivedData);    // Printing in ASCII format
     }
-
+    
 }
 
 //--------------------------------------------------------------

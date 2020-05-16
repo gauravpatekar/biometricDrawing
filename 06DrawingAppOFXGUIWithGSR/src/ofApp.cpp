@@ -39,15 +39,15 @@ void ofApp::update(){
             }
         }
         
-    //    //jitteryness
-    //    for (int i=0; i<polylines.size(); i++) {
-    //        for (auto &vert : polylines[i].getVertices()){
-    //            if(i == polylines.size() -1){
-    //                vert.x += ofRandom(-1,1);
-    //                vert.y += ofRandom(-1,1);
-    //            }
-    //        }
-    //     }
+        //jitteryness
+        for (int i=0; i<polylines.size(); i++) {
+            for (auto &vert : polylines[i].getVertices()){
+                if(i == polylines.size() -1){
+                    vert.x += ofRandom(-1,1);
+                    vert.y += ofRandom(-1,1);
+                }
+            }
+         }
     
     //serial
     if(serial.available()){
